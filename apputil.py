@@ -85,4 +85,4 @@ def sort_names(names, scores):
     # sort the scores in descending order and return the names in that order
     sorted_names = np.argsort(scores)[::-1]
     # return the names in the order of the sorted scores
-    return names[sorted_names]
+    return [names[i] for i in sorted_names]
